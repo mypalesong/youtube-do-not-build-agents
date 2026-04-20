@@ -1,0 +1,280 @@
+/* ===========================
+   Publication-Style Theme
+   Don't Build Agents, Build Skills Instead
+   =========================== */
+
+:root {
+  /* Color scheme - subtle, elegant */
+  --vp-c-brand-1: #4a3728;
+  --vp-c-brand-2: #6b5344;
+  --vp-c-brand-3: #8c7060;
+  --vp-c-brand-soft: rgba(74, 55, 40, 0.12);
+
+  --vp-c-bg: #fdfbf7;
+  --vp-c-bg-alt: #f5f0e8;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f5f0e8;
+
+  --vp-c-text-1: #2c2420;
+  --vp-c-text-2: #594e47;
+  --vp-c-text-3: #8c8078;
+
+  --vp-c-divider: #e0d8cf;
+
+  /* Typography */
+  --vp-font-family-base: 'Noto Serif KR', Georgia, 'Times New Roman', serif;
+  --vp-font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+  /* Hero buttons - explicit overrides so text stays readable on brown bg */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #4a3728;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #6b5344;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #2c2420;
+
+  --vp-button-alt-border: #4a3728;
+  --vp-button-alt-text: #4a3728;
+  --vp-button-alt-bg: transparent;
+  --vp-button-alt-hover-border: #4a3728;
+  --vp-button-alt-hover-text: #4a3728;
+  --vp-button-alt-hover-bg: rgba(74, 55, 40, 0.08);
+  --vp-button-alt-active-border: #4a3728;
+  --vp-button-alt-active-text: #4a3728;
+  --vp-button-alt-active-bg: rgba(74, 55, 40, 0.16);
+}
+
+.dark {
+  --vp-c-bg: #1a1614;
+  --vp-c-bg-alt: #231f1c;
+  --vp-c-bg-elv: #2a2522;
+  --vp-c-bg-soft: #2a2522;
+
+  --vp-c-text-1: #e8e0d8;
+  --vp-c-text-2: #b8ada4;
+  --vp-c-text-3: #8c8078;
+
+  --vp-c-divider: #3d3530;
+
+  --vp-c-brand-1: #c4a882;
+  --vp-c-brand-2: #d4bc9e;
+  --vp-c-brand-3: #e0d0b8;
+  --vp-c-brand-soft: rgba(196, 168, 130, 0.16);
+
+  /* Hero buttons in dark mode */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #1a1614;
+  --vp-button-brand-bg: #c4a882;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #1a1614;
+  --vp-button-brand-hover-bg: #d4bc9e;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #1a1614;
+  --vp-button-brand-active-bg: #e0d0b8;
+
+  --vp-button-alt-border: #c4a882;
+  --vp-button-alt-text: #c4a882;
+  --vp-button-alt-bg: transparent;
+  --vp-button-alt-hover-border: #c4a882;
+  --vp-button-alt-hover-text: #c4a882;
+  --vp-button-alt-hover-bg: rgba(196, 168, 130, 0.12);
+  --vp-button-alt-active-border: #c4a882;
+  --vp-button-alt-active-text: #c4a882;
+  --vp-button-alt-active-bg: rgba(196, 168, 130, 0.2);
+}
+
+/* ---- Layout: article-like ---- */
+.vp-doc {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.9;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+
+/* ---- Headings: elegant serif ---- */
+.vp-doc h1 {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-weight: 900;
+  font-size: 2.4em;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  border-bottom: 3px double var(--vp-c-divider);
+  padding-bottom: 0.5em;
+  margin-bottom: 1.2em;
+}
+
+.vp-doc h2 {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.35em;
+  margin-top: 2.5em;
+}
+
+.vp-doc h3 {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-top: 2em;
+}
+
+/* ---- Drop cap for first paragraph ---- */
+.vp-doc > p:first-of-type::first-letter {
+  float: left;
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  line-height: 0.8;
+  padding-right: 0.08em;
+  padding-top: 0.07em;
+  color: var(--vp-c-brand-1);
+}
+
+/* ---- Paragraphs ---- */
+.vp-doc p {
+  margin-bottom: 1.3em;
+  text-align: justify;
+  word-break: keep-all;
+}
+
+/* ---- Pull quotes / blockquotes ---- */
+.vp-doc blockquote {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-style: italic;
+  font-size: 1.15em;
+  line-height: 1.75;
+  color: var(--vp-c-text-2);
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+  padding: 1.2em 1.5em;
+  margin: 2em 0;
+  position: relative;
+}
+
+.vp-doc blockquote::before {
+  content: '\201C';
+  font-family: Georgia, serif;
+  font-size: 4em;
+  color: var(--vp-c-brand-soft);
+  position: absolute;
+  top: -0.1em;
+  left: 0.15em;
+  line-height: 1;
+}
+
+.vp-doc blockquote p {
+  margin-bottom: 0.5em;
+}
+
+/* ---- Links ---- */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-decoration-color: var(--vp-c-brand-soft);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  text-decoration-color: var(--vp-c-brand-1);
+}
+
+/* ---- Horizontal rule: newspaper divider ---- */
+.vp-doc hr {
+  border: none;
+  border-top: 1px solid var(--vp-c-divider);
+  margin: 3em auto;
+  max-width: 200px;
+  position: relative;
+}
+
+.vp-doc hr::after {
+  content: '\2766';
+  position: absolute;
+  top: -0.65em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--vp-c-bg);
+  padding: 0 0.5em;
+  color: var(--vp-c-text-3);
+  font-size: 1.1em;
+}
+
+/* ---- Lists ---- */
+.vp-doc ul,
+.vp-doc ol {
+  margin-bottom: 1.3em;
+  padding-left: 1.5em;
+}
+
+.vp-doc li {
+  margin-bottom: 0.4em;
+}
+
+/* ---- Code blocks ---- */
+.vp-doc div[class*='language-'] {
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* ---- Tables ---- */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  font-size: 0.95em;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 700;
+  text-align: left;
+}
+
+.vp-doc th,
+.vp-doc td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 0.6em 1em;
+}
+
+/* ---- Nav bar adjustments ---- */
+.VPNav .title {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* ---- Sidebar typography ---- */
+.VPSidebar .group .title {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-weight: 700;
+}
+
+/* ---- Hero page overrides ---- */
+.VPHero .name {
+  font-family: 'Noto Serif KR', Georgia, serif !important;
+}
+
+.VPHero .tagline {
+  font-family: 'Noto Serif KR', Georgia, serif !important;
+  line-height: 1.6;
+}
+
+/* ---- Footer ---- */
+.VPFooter {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-size: 0.9em;
+}
+
+/* ---- Smooth transitions ---- */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

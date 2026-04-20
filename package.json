@@ -1,0 +1,13 @@
+{
+  "name": "anthropic-skills-talk-docs",
+  "version": "1.0.0",
+  "description": "Don't Build Agents, Build Skills Instead - Anthropic 엔지니어 Barry Zhang & Mahesh Murag 발표 분석",
+  "scripts": {
+    "dev": "vitepress dev --port 4303",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
