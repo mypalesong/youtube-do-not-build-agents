@@ -77,4 +77,22 @@ AI Engineer 컨퍼런스에서 Anthropic의 엔지니어 Barry Zhang과 Mahesh M
   ></iframe>
 </div>
 
+<p class="built-with">🤖 이 사이트는 <a href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Code</a>로 제작했습니다.</p>
+
 </div>
+
+<style>
+.built-with {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.built-with a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-decoration-color: var(--vp-c-brand-soft);
+  text-underline-offset: 3px;
+}
+</style>

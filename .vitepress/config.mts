@@ -11,6 +11,25 @@ export default defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&display=swap', rel: 'stylesheet' }],
+
+    // Open Graph
+    ['meta', { property: 'og:type', content: 'article' }],
+    ['meta', { property: 'og:site_name', content: '에이전트 말고, 스킬을 만들어라' }],
+    ['meta', { property: 'og:title', content: "Don't Build Agents, Build Skills Instead" }],
+    ['meta', { property: 'og:description', content: 'Anthropic 엔지니어 Barry Zhang & Mahesh Murag의 16분 발표 — 전문, 한국어 번역, 주제별 분석' }],
+    ['meta', { property: 'og:url', content: 'https://mypalesong.github.io/youtube-do-not-build-agents/' }],
+    ['meta', { property: 'og:image', content: 'https://img.youtube.com/vi/CEvIs9y1uog/maxresdefault.jpg' }],
+    ['meta', { property: 'og:image:width', content: '1280' }],
+    ['meta', { property: 'og:image:height', content: '720' }],
+    ['meta', { property: 'og:image:alt', content: "Don't Build Agents, Build Skills Instead - Anthropic talk" }],
+    ['meta', { property: 'og:video', content: 'https://www.youtube.com/watch?v=CEvIs9y1uog' }],
+    ['meta', { property: 'og:locale', content: 'ko_KR' }],
+
+    // Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: "Don't Build Agents, Build Skills Instead" }],
+    ['meta', { name: 'twitter:description', content: 'Anthropic 엔지니어 Barry Zhang & Mahesh Murag의 16분 발표 — 전문, 한국어 번역, 주제별 분석' }],
+    ['meta', { name: 'twitter:image', content: 'https://img.youtube.com/vi/CEvIs9y1uog/maxresdefault.jpg' }],
   ],
 
   themeConfig: {
@@ -81,7 +100,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'YouTube 영상 기반으로 정리된 문서입니다.',
+      message: '🤖 Claude Code로 제작했습니다! · YouTube 영상 기반으로 정리된 문서입니다.',
       copyright: 'AI-assisted documentation · Barry Zhang & Mahesh Murag, Anthropic',
     },
 
